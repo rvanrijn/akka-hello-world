@@ -2,17 +2,17 @@ import NativePackagerHelper._
 
 name := "akka-sample-main-scala"
 
-version := "2.4-SNAPSHOT"
+version := "2.4.9"
 
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-actor" % "2.4-SNAPSHOT"
+  "com.typesafe.akka" %% "akka-actor" % "2.4.9"
 )
 
 enablePlugins(JavaServerAppPackaging)
 
-mainClass in Compile := Some("sample.hello.Main")
+mainClass in Compile := Some("sample.hello.Main2")
 
 mappings in Universal ++= {
   // optional example illustrating how to copy additional directory
